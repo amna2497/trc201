@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Media Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+    .media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .media img,
+    .media video {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    video {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Media Gallery</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Images</h2>
+      <div class="media">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.A4NRsTmGA1tLXwMx0nVioAHaEo?pid=Api&P=0&h=180" alt="Sample Image 1">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.EaTug7E3jcaapFVnI3ccIQHaEK?pid=Api&P=0&h=180" alt="Sample Image 2">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.6KmcpttHQjwmh5Avu0BeSwHaEo?pid=Api&P=0&h=180" alt="Sample Image 3">
+      </div>
+    </section>
+
+    <section>
+      <h2>Videos</h2>
+      <div class="media">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls>
+          <source src="160767-822213540_tiny.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amandeep Kumar 2434913. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
